@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sasso-Carta-Forbice</title>
+    <link rel="stylesheet" href="skeleton.css">
+    <link rel="icon" type="image/x-icon" href="Favicon/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Il gioco Sasso Carta Forbice</h1>
+      <h2>Vinci cinque rounds per aggiudicarti la partita</h2>
+      <h2 id = "punteggio">Umano <span id="p-score">0</span> - <span id="c-score">0</span> Computer</h2>
+      <h2 id = "pareggio"></h2>
+      <img src="images/spacca_computer.gif" id ="perso_id">
+      <img src="images/fireworks.gif" id ="vinto_id">
+      <div class="firework"></div>
+      <div class="display-moves" id ="display_moves_id">
+        <div class="move">
+           <img class="umano" id="p-move" src="images/Rock.svg" value = "0">
+        </div>
+        <div class="separator">VS</div>
+        <div class="move">
+           <img class="computer" id="c-move" src="images/Rock.svg">
+        </div>
+      </div>
+      <h2 id = "clicca_id">Clicca sull'immagine sotto per selezionare la tua mossa:<h2>
+      <div class="action" id = "action_id">
+        <input class="options sasso" id = "Sasso" type="image" src="images/Rock.svg">
+        <input class="options carta" id = "Carta" type="image" src="images/Paper.svg">
+        <input class="options forbice" id = "Forbice" type="image" src="images/Scissors.svg">
+      </div>
+    </div>
+  <script src ="game.js" charset = "utf-8"></script>
+  </body>
+</html>

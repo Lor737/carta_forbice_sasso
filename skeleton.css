@@ -1,0 +1,71 @@
+body
+{
+  text-align: center;
+  font-family: "Arial";
+}
+.container
+{
+    background-color: skyblue;
+    border-radius: 20px;
+    padding: 25px 50px;
+    width: 80vw;
+    display: block;
+    margin: auto;
+}
+.action
+{
+  max-width: 800px;
+  padding: 40px 0;
+  margin: 0 auto;
+  background-color: cadetblue;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  visibility: visible;
+}
+.options
+{
+  flex: 1 1 30%;
+  border-radius: 50%;
+  border-width: 4px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  animation-name: anim-fade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  width: 100%;
+  max-width: 120px;
+}
+
+.options:hover
+{
+  background: radial-gradient(circle, #00cddb, rgb(0, 21, 255));
+}
+
+.display-moves
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  visibility: visible;
+}
+.move
+{
+  border-radius: 50%;
+  border-width: 4px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.7);
+}
+.separator
+{
+  font-size: 5em;
+}
+#display_moves_id {visibility: visible;}
+#action_id {visibility: visible;}
+#clicca_id {visibility: visible;}
+#perso_id {visibility: hidden;width: 0px;height: 0px;}
+#vinto_id {visibility: hidden;width: 0px;height: 0px;}
